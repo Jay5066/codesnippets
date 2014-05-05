@@ -29,7 +29,7 @@
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 
 #Setup alias command 	
-alias aws='ssh -p 2600 jachand@54.243.142.220'
+alias aws='ssh -p 2600 jachand@IP'
 alias ll="ls -al"
 alias dsw="cd ~/Documents/sites/dev/wys/ "
 
