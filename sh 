@@ -136,7 +136,18 @@ git stash apply
 git stash clear
 
 ## Working Remotely ##
+## Use hub to create repo and more .. 
+## Instal hub if you have brew installed 
 
+#run brew install hub 
+
+#hub init 
+#hub create 
+#else
+git remote add origin <git-repo>
+git commit -u origin/master etc. 
+
+Done!
 #---------------------------------------------------------------------------------------
 
 ### UNIX COMMANDS ###
