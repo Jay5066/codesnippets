@@ -1,0 +1,5 @@
+sql join 
+
+select * from k12_schools 
+left join `k12_school_state` on k12_schools.`state_id` = `k12_school_state`.`state_name_tid`
+where k12_schools.`state_id` = `k12_school_state`.`state_name_tid`

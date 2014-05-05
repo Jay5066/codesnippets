@@ -1,0 +1,5 @@
+@import 'compass';
+//box sizing 20%1px+3em padding is how much widthin%?
+//natural box method. allows it to be always to be 20% width.
+//suport from ie8 first. 
+*{@include box-sizing('border-box');}
