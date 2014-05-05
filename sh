@@ -115,7 +115,9 @@ __git_ps1 (function)
 #Merge chagnes from one branch into another. 
 git chekout (branch that we will be merging INTO) e.g. 
 git checkout master
-git merge newBranch DONE!  
+git merge newBranch 
+
+ 
 
 # Other Merge Type (Fast-forward, true merge)
 ### Resolve merge conflict or Abort## 
@@ -137,17 +139,17 @@ git stash clear
 
 ## Working Remotely ##
 ## Use hub to create repo and more .. 
-## Instal hub if you have brew installed 
+## Install hub if you have Home-brew installed 
 
 #run brew install hub 
 
 #hub init 
 #hub create 
-#else
+# else }
 git remote add origin <git-repo>
 git commit -u origin/master etc. 
 
-Done!
+
 #---------------------------------------------------------------------------------------
 
 ### UNIX COMMANDS ###
