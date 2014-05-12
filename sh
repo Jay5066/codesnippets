@@ -1,5 +1,6 @@
 
 #Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot 
+## Drush Commands ## 
 
 #To turn on JS Aggregation
     drush vset preprocess_js 1 --yes
@@ -22,8 +23,7 @@
 #---------------------------------------------------------------------------------------
 
 ### BASH RELATED CODE ###
-
-#setup .bash_profile 
+# setup .bash_profile 
 
 #This is global install path setup command 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
@@ -54,11 +54,13 @@ syntax on
 colorscheme desert
 :set nu
 
+#Vi
+j #move down
+k #move up 
+
 #---------------------------------------------------------------------------------------
 
 ### GIT RELATED CODE ###
-
-
 
 #Setup git for work.    
 git config --global #run command  
@@ -79,6 +81,7 @@ git commit --amend -m "Changed commit message "
 
 #If we need to checkout from older commit use#id 
 git checkout 7873920842 filename.php
+
 #git reset back to commit#id 
 git reset --soft [commit#id] #this is the safest way to reset.  
 git reset --mixed [commit#id] #this is also safe. 
@@ -108,6 +111,8 @@ gut branch -m oneBranchName newBranchname
 git branch -d thisBranch 
 #See which branches have been merged with current git branch
 git branch --merged
+#List all remote branches 
+git branch -r 
 
 #Always display branch you are currently working on. 
 __git_ps1 (function)
@@ -117,7 +122,6 @@ git chekout (branch that we will be merging INTO) e.g.
 git checkout master
 git merge newBranch 
 
- 
 
 # Other Merge Type (Fast-forward, true merge)
 ### Resolve merge conflict or Abort## 
@@ -146,9 +150,28 @@ git stash clear
 #hub init 
 #hub create 
 # else }
+
+## Create new repo ## 
 git remote add origin <git-repo>
 git commit -u origin/master etc. 
 
+## Collaborate ## 
+git clone <Path to git-repo>
+
+## Working with untracked branches ##
+git branch --set-upstrem dev origin/dev
+## Track new branch upstream. 
+git push -u origin dev
+# Checkout and track branch from repo e.g. dev/prod etc 
+git checkout -b dev origin/dev
+# Deleting branch from remote * not from local *
+git push orign :dev 
+or 
+git push --delete dev 
+
+
+## Fetch changes from remote. 
+git fetch 
 
 #---------------------------------------------------------------------------------------
 
@@ -159,4 +182,5 @@ mkdir -p myProject/{src,doc/{api,system},tools,db}
 
 #Set prompt (PS1) to display time/dir on load & more.
 export PS1 = "Whatevet you want to see on prompt" 
-  
+#Move everything from current dir to up ../
+mv * .[^.]* ../  
