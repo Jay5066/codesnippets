@@ -172,6 +172,17 @@ git push --delete dev
 
 ## Fetch changes from remote. 
 git fetch 
+git merge
+
+## Create git alies 
+git config --global alias.st "status"
+git config --global alias.log "log --graph --decorate --oneline --abbrev-commit --all"
+
+#Caching git user and password 
+#or 
+
+#use ssh-key
+
 
 #---------------------------------------------------------------------------------------
 
