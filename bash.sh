@@ -225,6 +225,56 @@ chmod a=rwx #(all u,g,o)
 sudo -u root whoami (switch user) 
 sudo cat /etc/Sudoers #sudo config file location 
 
+# Find more about the given command. 
+whereis echo #Program-name
+which echo  #Program-name
+whatis ls  #program-name
+
+# Display info about this machine.
+uname -ap
+
+# Current Disck info e.g. df=>disk-free 
+df 
+df -h #humanise. 
+df -H #give you actual HD size.
+
+# Current Disck uses. du=>disk-uses
+du path-to-file 
+du -h path-to-file #human readable option
+du -ah path-to-file #all files | human readable option
+du -hd 1 path-to-file # Go only one level down 
+
+## Current bg running process command ps=>process-status 
+ 
+# Display list of all current processes 
+ps aux 
+# List top processes realtime. 
+top 
+#number of process 
+top -n 10 #shows number of current running processes
+top -n 20 -o cpu -s 3 -U jay # Disply top 20 process by jay filter by option CPU every 3 sec. 
+
+#Kill any process 
+kill process-ID
+kill -9 process-ID #force kill any-process.
+
+#Word cound out=>line, word , chars  
+wc file.txt 
+
+## SVN COMMANDS TO UPDATE RMI CODEBASE (also applies for k12.com codebase) ##
+
+## Svn commands
+svn commit 
+svn update 
+
+## Imp url's for RMI updates.  
+url : http://go-sync.k12.com/
+check url : go-k12.com/rmi/school-name
+
+## look at all the most recent log. Disply only 3 . 
+svn log --limit=3
+
+
 
 
 
