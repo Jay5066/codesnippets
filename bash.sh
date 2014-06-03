@@ -261,7 +261,34 @@ kill -9 process-ID #force kill any-process.
 #Word cound out=>line, word , chars  
 wc file.txt 
 
+## Working with text file. 
+sort filename.txt
+uniq filename.txt 
+
+
+## Inpout & output
+echo "Hello" > index.php ## Instade of outputting to screen write to index.php 
+
+## join two files
+oldfile.txt newfile.txt > joined.txt ## Join two files together 
+mysql -uroot -proot dbname.sql > mysql.sql
+
+## Appand to existing file (To the end)
+oldfile.txt newfile.txt >> joined.txt ## to appand use >> end of the line. 
+
+## To pass content into 'command' use '<'
+wc < passthis.txt;
+
+# Both inut,output
+bc < math.txt > outputmath.txt ## command < inputfile > outputfile. 
+
+# Piping commands together
+cat file.txt | sort | uniq 
+# Pipe; chain commands together & output to file 
+cat file.txt | sort | uniq > outputfile.txt  
+
 ## SVN COMMANDS TO UPDATE RMI CODEBASE (also applies for k12.com codebase) ##
+ldfile.txt newfile.txt > joined.txt ## Join two files together 
 
 ## Svn commands
 svn commit 
