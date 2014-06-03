@@ -287,6 +287,25 @@ cat file.txt | sort | uniq
 # Pipe; chain commands together & output to file 
 cat file.txt | sort | uniq > outputfile.txt  
 
+### POWER UNIX COMMANDS ###
+
+## Searching Grep (find) 
+Grep sting filename. 
+
+## Translate 
+tr 
+
+## SED (search and replace etc) 
+echo "upstream" | sed 's/up/down/'
+
+## Cut command '-c -> chars' 
+cut -c 2-10 filename.txt
+
+## Diff 
+diff 
+
+
+
 ## SVN COMMANDS TO UPDATE RMI CODEBASE (also applies for k12.com codebase) ##
 ldfile.txt newfile.txt > joined.txt ## Join two files together 
 
