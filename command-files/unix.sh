@@ -103,6 +103,7 @@ cat file.txt | sort | uniq
 # Pipe; chain commands together & output to file 
 cat file.txt | sort | uniq > outputfile.txt  
 
+
 ### POWER UNIX COMMANDS ###
 
 ## Searching Grep (find) 
@@ -118,4 +119,38 @@ echo "upstream" | sed 's/up/down/'
 cut -c 2-10 filename.txt
 
 ## Diff 
-diff 
+diff file-one.txt file-two.txt
+
+## xargs
+xargs ## command
+
+
+## MAC ONLY COMMAND FOR UNIX 
+
+# open file,applicaltion,url etc 
+open -a applcation-name
+open http://google.com
+open thisfile.txt #set default text-editor 
+
+# copy and past (clipboard=find,)
+pbcopy < filename.txt #addds to clipboard 
+pbpaste > filename.txt #past to filename.txt
+
+## Switch clipboard to juggle data. 
+echo "First" | pbcopy -pboard general 
+echo "Second" | pbcopy -pboard find 
+
+## Screen-capture command 
+screencapture #command 
+screencapture ~/Desktop/screencapture.png
+
+
+
+
+
+
+
+
+
+
+
