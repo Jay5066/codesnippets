@@ -144,9 +144,31 @@ echo "Second" | pbcopy -pboard find
 screencapture #command 
 screencapture ~/Desktop/screencapture.png
 
+## Shutdown, sleep and reboot (-h,-r,-s) in time 
+sudo shutdown -h now # shotdown now 
+sudo shutdown -r +45 # reboot in 45m
+sudo shutdown -r # reboot in given date e.g. yymmddhhmm 
 
+## Text to speech command 
+say "Unix is awesome."
+say "Unix is awesome" -v Zarvox 
 
+## Find file metadata using mdfind 
+mdfind "metadata-tearm"
+mdfind -onlyin FILEPATH "metadata-tearm" # Find 'metadate-tearm in given FILEPATH
+mdfind -onlyin FILEPATH -interpret "metadata-tearm -new" # exclude tearn'new' 
 
+# Metadata listing (Peek into the files metadata.)
+mdls FILENAME # View FILE metadata 
+ 
+## Apple scripts and unix (filename.scpt) 
+osascript -e 'set volume output muted true' # Set volume to mute 
+osascript -e 'set volume output muted false' # to false
+osascript -e 'tell application "Finder" to display dialog "Hello"' # Command appalications to do things. 
+
+## Read/Write System config files (filename.plist) command:defaults
+defaults read <domain> <key> # read only path=usr/Library/Preference/
+defaults write <domain> <key> <value> 
 
 
 
