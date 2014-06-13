@@ -14,7 +14,9 @@ color.ui=true
 git reset HEAD index.php
 
 # Git diff staged file 
-git diff --staged 
+git diff --staged
+# Number of files chanaged 
+git diff --stat  
 
 # Git changes/amend receltly committed message or file. only works is this was the last file changed. 
 git commit --amend -m "Changed commit message "

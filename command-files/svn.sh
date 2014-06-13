@@ -1,9 +1,6 @@
 
 #--------------------------------------------------------------------------------------- 
 
-## SVN COMMANDS TO UPDATE RMI CODEBASE (also applies for k12.com codebase) ##
-ldfile.txt newfile.txt > joined.txt ## Join two files together 
-
 ## Svn commands
 svn commit 
 svn update 

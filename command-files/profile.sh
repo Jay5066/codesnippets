@@ -34,6 +34,11 @@ alias vs="vagrant status"
 alias vu="vagrant up"
 alias vd="vagrant destroy -f"
 
+source ~/.git-prompt.sh
+
+# Configure prompt
+#PS1='$(__git_ps1 "(%s)") \u\$ > '
+PS1='\u\[\e[33m\]$(__git_ps1 "(%s)")\[\e[0m\]\[\e[32m\][\W]\[\e[0m\]$ '
 
 # Configure prompt
 PS1="\u$ "
