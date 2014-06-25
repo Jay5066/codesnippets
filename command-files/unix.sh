@@ -16,6 +16,9 @@ mv * .[^.]* ../
 ## Create hard link (don't break if the file is delited.[another ref to the same file storage.])
 ln name-of-file link-name
 
+## Untar command 
+tar -xvzf filename.tar.gz
+
 ## Create Hard link 
 ln -s name-of-file link-name
 
