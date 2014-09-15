@@ -173,7 +173,8 @@ osascript -e 'tell application "Finder" to display dialog "Hello"' # Command app
 defaults read <domain> <key> # read only path=usr/Library/Preference/
 defaults write <domain> <key> <value> 
 
-
+#SCP 
+scp -P 2600 -r jachand@54.243.142.220:/home/cdietz/jay-private-work-files .
 
 
 
