@@ -1,7 +1,6 @@
 #---------------------------------------------------------------------------------------
 
 ### GIT RELATED CODE ###
-
 # Setup git for work.    
 git config --global #run command  
 user.name= Jay Chand 

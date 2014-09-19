@@ -13,11 +13,28 @@ cat /etc/*-release ##gives you more info.
 ## Pkg manager for debian based OS 
 dpkg --list | grep httpd 
 
-##
+##Check the status of apache 
 apache2ctl staus
 apache2ctl -V 
 
 #Apache conf file 
 less /etc/apache2/apache2.conf
+
 #View quickly error logs
-sudo tail -100 /var/log/apache2/error.log    
+sudo tail -100 /var/log/apache2/error.log
+
+#dump all the avelable modules
+apache2ctl -t -D DUMP_MODULES
+
+#Greap/search for error log file inside apache2 dir 
+grep -Ri Errorlog /etc/apache2/ 
+grep -Ri Errorlog "export APACHE_LOG_DIR" /etc/apache2/
+
+sudoedit file 
+
+#tail error-log realtime 
+tail -f mysite-error.log
+
+#Graceful reastart apache. 
+sudo service apache2 graceful
+   
