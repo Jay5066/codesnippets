@@ -1,5 +1,5 @@
 #Restart Apache
-sudo service apache2 restarts
+sudo service apache2 restart
 
 #Using the Apache benchmark tool
 ab #command 
