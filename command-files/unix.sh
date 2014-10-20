@@ -176,6 +176,20 @@ defaults write <domain> <key> <value>
 #SCP 
 scp -P 2600 -r jachand@54.243.142.220:/home/cdietz/jay-private-work-files .
 
+## List of steps to follow after ec2 Instance gets created. 
+# Add group www 
+sudo groupadd www 
+
+# Add user to group to newly created group 
+sudo usermod -a -G www  ec2-user
+
+# change ownership of  the group(www) just created to 
+sudo chown  -R root:www /var/www
+
+# give group www all 777 for root dir 
+sudo chmod 2775 /var/www
+find /var/www -type d -exec sudo chmod 2775 {} + 
+find /var/www -type f -exec sudo chmod 0664 {} + 
 
 
 
