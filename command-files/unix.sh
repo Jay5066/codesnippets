@@ -183,7 +183,7 @@ sudo groupadd www
 # Add user to group to newly created group 
 sudo usermod -a -G www  ec2-user
 
-# change ownership of  the group(www) just created to 
+# change ownership of the group(www) just created to 
 sudo chown  -R root:www /var/www
 
 # give group www all 777 for root dir 

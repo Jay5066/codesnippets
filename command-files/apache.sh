@@ -37,4 +37,8 @@ tail -f mysite-error.log
 
 #Graceful reastart apache. 
 sudo service apache2 graceful
-   
+#Before ec2 is started 
+#! /bin/bash -ex
+yum update -y "PHP Support" "MySQL Database" "Web Server"
+service httpd start
+chkconfig httpd on   

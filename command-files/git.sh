@@ -99,12 +99,14 @@ git commit -u origin/master etc.
 ## Collaborate ## 
 git clone <Path to git-repo>
 
-## Working with untracked branches ##
-git branch --set-upstrem dev origin/dev
 ## Track new branch upstream. 
 git push -u origin dev
 # Checkout and track branch from repo e.g. dev/prod etc 
 git checkout -b dev origin/dev
+
+## Working with untracked branches ##
+git branch --set-upstrem dev origin/dev
+
 # Deleting branch from remote * not from local *
 git push orign :dev 
 or 
