@@ -111,4 +111,61 @@ var plus = function(){
 }
 console.log(plus(2,2,10));
 
-  
+
+//Creating Js modules for re-use
+//Passing arguments and setting module defaults
+var sum =(function(){
+
+    var DEFAULTS = {
+        say:"Yepp!"
+    }
+        return {
+          value:function(){
+            var myArgs = arguments[0] || '';
+            var statement = myArgs.say || DEFAULTS;
+            console.log(statement); 
+          }
+        };
+})();
+
+sum.value({say:"Hellow"});
+
+
+//Function chaning within custom js module 
+
+var jay =(function(){
+
+    var DEFAULTS = {
+        speaks:"Yepp",
+        speed:"slow"
+    }
+   
+    return {
+       say:function(){
+            var myArgs = arguments[0] || '';
+            var statement = myArgs.speaks || DEFAULTS;
+            console.log(statement);
+            return this;
+          },
+      
+        runs:function(){
+          var myArgs = arguments[0]||'';
+          var statement = myArgs.speed || DEFAULTS;
+            console.log(statement);
+            return this;
+        }
+
+   }
+
+    
+})();
+
+// jay.say({speaks:"Hey"});
+// jay.runs({speed:"fast"});
+
+jay.say({speaks:"Hello"}).runs({speed:"fast"});
+
+
+
+
+
