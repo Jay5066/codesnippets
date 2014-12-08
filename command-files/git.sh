@@ -3,8 +3,8 @@
 ### GIT RELATED CODE ###
 # Setup git for work.    
 git config --global #run command  
-user.name= Jay Chand 
-user.email= jchand5066@gmail.com 
+user.name= Your name 
+user.email= user@email.com 
 core.editor= vim 
 color.ui=true  
 

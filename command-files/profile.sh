@@ -22,13 +22,13 @@ alias mkdir="mkdir -p"
 alias tbi='ti build --platform iphone --target device --deploy-type development'
 alias tib='ti build -p ios -D development  --sim-64bit '
 ## server alias 
-alias k12jump='ssh jachand@10.40.9.78'
-alias aws_prod='ssh -p 2600 jachand@54.243.142.220'
-alias aws_dev='ssh -p 2600 jachand@54.221.207.112'
+alias k12jump='ssh user@10.40.9.78'
+alias aws_prod='ssh -p 2600 user@54.243.142.220'
+alias aws_dev='ssh -p 2600 user@54.221.207.112'
 alias acquia_dev='ssh k12sites@staging-2083.prod.hosting.acquia.com'
 alias acquia_prod='ssh k12sites@ded-2873.prod.hosting.acquia.com'
-alias cdevbox="ssh jachand@c-dev-mrkt1.k12.com"
-alias cbups="ssh jachand@c-dev-mrkt1.k12.com"
+alias cdevbox="ssh user@c-dev-mrkt1.k12.com"
+alias cbups="ssh user@c-dev-mrkt1.k12.com"
 
 ## Rsync 
 alias mod-rsync='rsync -a ~/Documents/sites/dev/mod-build/ ~/Documents/sites/dev/mod'
