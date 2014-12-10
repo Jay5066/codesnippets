@@ -33,7 +33,7 @@ find ~/Documents/sites/ -name "*.htm"
 find ~/Documents/sites/ -name "index[123].html"
 
 ## Change file owner 
-chown user:group filename 
+chown user:group filename
 
 ## Change file modes or Access Control Lists
 chmod (u{user},g{group},o{owner}), (r{read},w{write},x{execute}) 
