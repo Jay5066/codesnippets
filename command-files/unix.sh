@@ -174,10 +174,10 @@ defaults read <domain> <key> # read only path=usr/Library/Preference/
 defaults write <domain> <key> <value> 
 
 #SCP 
-scp -P 2600 -r jachand@54.243.142.220:/home/cdietz/jay-private-work-files.
+scp -P 2600 -r user@54.243.142.220:/home/username/user-private-work-files.
 
 ## List of steps to follow after ec2 Instance gets created. 
-# Add group www 
+# Add group www 	
 sudo groupadd www 
 
 # Add user to group to newly created group 
