@@ -124,3 +124,8 @@ git config --global alias.log "log --graph --decorate --oneline --abbrev-commit 
 # Caching git user and password 
 # or 
 # use ssh-key
+
+#If you branch is untracked.Try this. 
+git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+git fetch origin
+

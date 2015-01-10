@@ -165,6 +165,20 @@ Null for now .
 	^(?=.*\d)(?=.*[~!@#$%^&*()_\-+=|\\{}[\]:;<>?/])(?=.*[A-Z])(?=.*[a-z])\S{8,15}$
 		e.g.
 			sword#42Fish 
+
+- > Matching Cradit Card numbers 
+	^(?:3[47]\d{2}([\-]?)\d{6}\1\d{5}|(?:4\d{3}|5[1-5]\d{2}|6011)([\- ]?)\d{4}\2\d{4}\2\d{4})$
+		e.g.	
+			American Express 
+			3400-123456-12345
+			Visa 	
+			4000-1234-1234-1234
+			Mastercard 
+			5100-1234-1234-1234
+			Discover 
+			6011-1234-1234-1234
+
+
 //Control character
 \t = tab
 \r, \n, \r\n = line returns 
