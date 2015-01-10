@@ -129,3 +129,19 @@ git config --global alias.log "log --graph --decorate --oneline --abbrev-commit 
 git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 git fetch origin
 
+# Better Git Workflow 
+# After work is complete 
+git checkout [BranchName] - > Begin by checkout working brnach
+git fetch - > Fetch new changes
+git merge origin/[BranchName] - > merge new changes from origin/[BranchName] to [BranchName]
+git checkout -b [newFeatureBrnach] - > Now checkout new feature brnach
+git add newChanges.php - > Add/Update files.
+git commit -m "Your Commit message" 
+git fetch - > Make sure you are uptodate. 
+git push -u origin [newFeatureBrnach] - > Track and push new feature brnach. 
+
+#Before Work begins. 
+git checkout [BranchName] - > Begin by checkout working brnach.
+git fetch - > Fetch new changes
+git merge origin/[BranchName] - > merge new changes from origin/[BranchName] to [BranchName]
+git checkout -b [Brnach] origin/[Brnach] - > Now checkout newbrnach locally that tracks new origin brnach. 
