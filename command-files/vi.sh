@@ -11,4 +11,8 @@ colorscheme desert
 
 # Vi movements 
 j #move down
-k #move up 
+k #move up
+
+#Select between lines 
+:1,20y 
+ 
