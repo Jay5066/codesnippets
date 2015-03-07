@@ -173,8 +173,10 @@ osascript -e 'tell application "Finder" to display dialog "Hello"' # Command app
 defaults read <domain> <key> # read only path=usr/Library/Preference/
 defaults write <domain> <key> <value> 
 
-#SCP 
+#Scp Down 
 scp -P 2600 -r user@54.243.142.220:/home/username/user-private-work-files.
+#Scp UP 
+
 
 ## List of steps to follow after ec2 Instance gets created. 
 # Add group www 	

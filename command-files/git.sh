@@ -144,4 +144,9 @@ git push -u origin [newFeatureBrnach] - > Track and push new feature brnach.
 git checkout [BranchName] - > Begin by checkout working brnach.
 git fetch - > Fetch new changes
 git merge origin/[BranchName] - > merge new changes from origin/[BranchName] to [BranchName]
-git checkout -b [Brnach] origin/[Brnach] - > Now checkout newbrnach locally that tracks new origin brnach. 
+git checkout -b [Brnach] origin/[Brnach] - > Now checkout newbrnach locally that tracks new origin brnach.
+
+#Fork workflow 
+git remote add upstream path.git 
+git fetch upstream
+ 
