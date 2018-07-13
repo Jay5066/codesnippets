@@ -1,0 +1,30 @@
+https://master.openshiftdev.egt-labs.com:8443/
+Username: dolteam
+t2R&UMf4$Wp2QQe2
+
+docker build --build-arg USER=jchand --build-arg PASS=HWFhG63jWsGi -t daipgit.egt-labs.com:4567/docker/rhel7.5-httpd .
+
+mysql -h http://mysql-service-daip-local.192.168.99.100.nip.io -P 30801 -udaipadmin -pdevnanigans daip < ./db_dump/staging-latest-docker.sql
+
+#AWS Gov Cloud URL 
+https://fema-govcloud-daip-dev.signin.amazonaws-us-gov.com/console
+
+
+ssh -i ~/.ssh/daip_k8s ec2-user@52.222.53.57
+scp -i ~/.ssh/daip_k8s  ec2-user@52.222.53.57:/home/ec2-user/repos.tar .
+
+mysql -h daip-rds.c154zti7sdlc.us-gov-west-1.rds.amazonaws.com -P3306 -udaipadmin -pdevnanigans
+
+https://daipjenkins.egt-labs.com/
+oc --namespace=daip-dev set image deployment/drupal-deployment drupal=daipgit.egt-labs.com:4567/daip/drupal:new
+
+def jobName = "	daip-drupal-pipeline"
+def job = Jenkins.instance.getItem(jobName)
+job.getBuilds().each { it.delete() }
+job.nextBuildNumber = 1
+job.save()
+
+docker build --build-arg USER=jchand --build-arg PASS=HWFhG63jWsGi -t daipgit.egt-labs.com:4567/docker/rhel7.5-httpd .
+
+daipdev
+da1pdev
